@@ -21,21 +21,23 @@
           .Photo
             = image_tag 'me.jpg', alt: 'me', class: 'Me'
           .Prof
-            .Category
-              %ul.contents
-                %li 名前　　：廣澤 佐和子
-                %li 生年月日：1986/04/14 (34歳)
-                %li 出身　　：群馬県藤岡市
-                %li 趣味　　：ライブ・フェス、
-                %li 　　　　　ゲーム、スノボ、お酒etc.
-        .comment
-          %ul
-            %li 結婚して廣澤姓になり、「ひろ”さわさわ”こ」となったため、最近はサワサワと呼ばれています。
-            %li システム開発の仕事に携わりたいと思い立ち、プログラミングスクールに入学し、現在に至ります。
-            %li 日々怠らずに、自己研鑽して参りますのでよろしくお願いします！
-        .MoreInfo
-          =link_to profile_sawa_sawa_index_path, class:"info" do
-            > more information
+            %ul
+              %li
+                .Category
+                  %ul.contents
+                    %li 名前　　：廣澤 佐和子
+                    %li 生年月日：1986/04/14 (34歳)
+                    %li 出身　　：群馬県藤岡市
+                    %li 趣味　　：ライブ・フェス、
+                    %li 　　　　　ゲーム、スノボ、お酒etc.
+              %li
+                %ul
+                  %li 　
+                  %li 結婚して廣澤姓になり、「ひろ”さわさわ”こ」となったため、最近はサワサワと呼ばれています。
+                  %li システム開発の仕事に携わりたいと思い立ち、プログラミングスクールに入学し、現在に至ります。日々怠らずに、自己研鑽して参りますのでよろしくお願いします！
+            .MoreInfo
+              =link_to profile_sawa_sawa_index_path, class:"info" do
+                > more information
       .ShowContents.myport
         .Title
           Portfolio
