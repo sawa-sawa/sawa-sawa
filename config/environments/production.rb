@@ -2,6 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   # herokuデプロイ用修正
   config.assets.js_compressor = Uglifier.new(harmony: true)
+  
   # Code is not reloaded between requests.
   config.cache_classes = true
 
