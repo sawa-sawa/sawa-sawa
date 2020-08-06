@@ -1,0 +1,352 @@
+*{
+  box-sizing: border-box;
+}
+
+.Wrapper{
+  // background-color: #222222;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  font-family: arial, helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0 0 10px black;
+  .MainView{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    .Message{
+      font-size: 1.5rem;
+      display: flex;
+      height: 10%;
+      align-items: center;
+      max-height: 300px;
+      margin-top: 5px;
+      .Greet{
+        text-align: center;
+        span{
+          color: #ab0f50;
+        }
+      }
+    }
+    .Menu{
+      width: 100%;
+      // height: 30%;
+      margin: 5px 0;
+      max-height: 300px;
+    }
+    .Show{
+      width: 80%;
+      height: 50%;
+      display: flex;
+      
+      // align-items: center;
+      justify-content: center;
+      
+      .ShowContents::-webkit-scrollbar {
+        display: none;
+      }
+      .ShowContents{
+        overflow-y: scroll;
+        height: 90%;
+        width:100%;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 20px 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+        background-blend-mode: multiply,multiply;
+        .Title{
+          // font-size: 2rem;
+        width: auto;
+        border-bottom:1px solid white;
+        margin-bottom: 5px;
+        }
+        ul{
+          // font-size: 1.2rem;
+          font-weight: 500;
+        }
+        .AboutMe{
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          // height: 70%;
+          .Photo{
+            width: 80px;
+            .Me{
+              height: auto;
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+          .Prof{
+            width: 90%;
+            margin-left: 10px;
+            display: flex;
+          }
+        }
+        .comment{
+          margin-top: 5px;
+        }
+        .MyPortfolio{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          .PortContents{
+            display: flex;
+            margin-bottom: 10px;
+            .PortImg{
+              width: 40%;
+              height: 50%;
+              // .app{
+              //   max-height: 50%;
+              // }
+            }
+            .PortInfo{
+              width: 60%;
+              .PortName{
+                border-bottom: 1px solid white;
+                font-weight: 600;
+
+              }
+            }
+          }
+        }
+
+        .MoreInfo{
+          // position: absolute;
+          // bottom: 10px;
+          // right: 10px;
+          text-align: right;
+          margin-bottom: 5px;
+
+          .info{
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 10px;
+          }
+        }
+        .sns{
+          font-size: 12px;
+        }
+      }
+      .active{
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+.container{
+  // margin: 50px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+.header{
+  color: #fff;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.accordion {
+  // width: 100%;
+  // min-width: 800px;
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  // height: 200px;
+  // height: 100%;
+  font-size: 0;
+}
+
+.tab {
+  display: flex;
+  border-right: #333 solid 1px;
+  flex: 1;
+  // height: 200px;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+  flex-grow: 3;
+}
+
+.tab:hover .content {
+  flex-grow: 1;
+  transition: all 0.4s ease-in-out 0.1s;
+}
+
+.tab:hover p{
+  opacity: 1;
+  transition: 3s;
+}
+
+.content {
+  flex: 1;
+  // height: 200px;
+  height: 100%;
+  color: black;
+  transition: all 0.4s ease-in-out 0.1s;
+  cursor: pointer;
+  cursor: hand;
+  
+  // .link{
+  //   width: 100%;
+  //   height: 100%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: center;
+  //   text-decoration: none;
+  //   color: white;
+  // }
+
+  .Msg{
+    text-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+  }
+
+  h1{
+    font-size: 2rem;
+    opacity: 1;
+  }
+
+  p{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    opacity: 0;
+    height: 1.5rem;
+    padding-top: 5px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.News{
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("flower.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Profile{
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("akagi.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Portfolio{
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("PC.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Blog{
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("yuyake.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Contact{
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("contact.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+// レスポンシブデザイン用
+// 幅768px以上の時
+@media screen and (min-width: 768px){
+  .Menu{
+    height: 100px;
+  }
+  .accordion{
+    height: 90px;
+    // font-size: 17px;
+    // line-height: 24px;
+  }
+  .Msg{
+    h1{
+      font-size: 18px;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+  .ShowContents{
+    .Title{
+      font-size: 20px;
+    }
+    li{
+      font-size: 10px;
+    }
+    // .Photo{
+    //   height: 80px;
+    // }
+  }
+}
+
+// 幅767px以下の時
+@media screen and (max-width: 767px){
+  .Menu{
+    height: 70px;
+  }
+  .accordion{
+    height: 50px;
+    // font-size: 17px;
+    // line-height: 24px;
+    .Msg{
+      h1{
+        font-size: 12px;
+      }
+      p{
+        font-size: 5px;
+      }
+    }
+  }
+  .Show{
+    height: 210px;
+  }
+  .ShowContents{
+    .Title{
+      font-size: 20px;
+    }
+    ul.contents{
+      min-width: 50px;
+    }
+    li{
+      font-size: 5px;
+    }
+    .Photo{
+      width: 70px;
+    }
+  }
+}
+

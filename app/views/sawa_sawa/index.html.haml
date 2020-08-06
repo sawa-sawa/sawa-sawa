@@ -1,0 +1,102 @@
+.Wrapper
+  .MainView
+    .Message
+      .Greet
+        Welcom to
+        %span Sawa-Sawa
+        's homepage
+    .Menu
+      = render "menu"
+    .Show
+      .ShowContents.news
+        .Title
+          News
+        %ul
+          %li 2019/08/06
+          %li ホームページ新設しました
+      .ShowContents.myprof
+        .Title
+          My Profile
+        .AboutMe
+          .Photo
+            = image_tag 'me.jpg', alt: 'me', class: 'Me'
+          .Prof
+            .Category
+              %ul.contents
+                %li 名前
+                %li 生年月日
+                %li 出身
+                %li 趣味
+            .section
+              %ul
+                %li ：
+                %li ：
+                %li ：
+                %li ：
+            .answer
+              %ul
+                %li 廣澤 佐和子
+                %li 1986/04/14 (34歳)
+                %li 群馬県藤岡市
+                %li ライブ・フェス、
+                %li ゲーム、スノボ、お酒 etc.
+                %li 　
+        .comment
+          %ul
+            %li 結婚して廣澤姓になり、「ひろ”さわさわ”こ」となったため、最近はサワサワと呼ばれています。
+            %li システム開発の仕事に携わりたいと思い立ち、プログラミングスクールに入学し、現在に至ります。
+            %li 日々怠らずに、自己研鑽して参りますのでよろしくお願いします！
+        .MoreInfo
+          =link_to profile_sawa_sawa_index_path, class:"info" do
+            > more information
+      .ShowContents.myport
+        .Title
+          Portfolio
+        .MyPortfolio
+          %ul
+            %li 
+              .PortContents
+                .PortImg
+                  = image_tag 'HOMEYO1.png', alt: 'app', width: '40%', height: '40%', class: 'app'
+                  = image_tag 'HOMEYO2.png', alt: 'app', width: '40%', height: '40%', class: 'app'
+                .PortInfo
+                  .PortName
+                    第三者に褒められるTODOリスト
+                  .Portdesc
+                    %p 第三者のタスクを褒めることのできる、SNS機能つきTodoリストのアプリです。
+                    %p 自身の大まかなタスク内容を、完了時に第三者に見てもらい、褒めてもらえるシステムです。
+                    %p タスク完了時のボタンを押すと、ボタン周辺に紙吹雪が飛びます 笑
+                    %p 　
+                    %p 使用技術：HTML(haml),CSS(scss),Ruby on Ralis,JavaScript,jQuery
+            %li
+              .PortContents
+                .PortImg
+                  = image_tag 'FURIMA1.jpg', alt: 'app', width: '40%', height: '40%', class: 'app'
+                  = image_tag 'FURIMA2.png', alt: 'app', width: '40%', height: '40%', class: 'app'
+                .PortInfo
+                  .PortName
+                    フリマアプリ
+                  .Portdesc
+                    %p 架空のフリマサイトのアプリです。
+                    %p ユーザー登録(SNS認証可)/ログイン、商品の出品・購入・検索などが実際に利用できます。
+                    %p チーム開発でスクラムマスターを担当しました。
+                    %p 　
+                    %p 使用技術：HTML(haml),CSS(scss),Ruby on Ralis,JavaScript,jQuery,AWS
+          .MoreInfo
+            =link_to profile_sawa_sawa_index_path, class:"info" do
+              > more information
+      .ShowContents.myblog
+        .Title
+          Blog
+        %ul
+          %li ただいま工事中。。。
+        .MoreInfo
+          =link_to profile_sawa_sawa_index_path, class:"info" do
+            > show more 
+      .ShowContents.contact
+        .Title
+          Contact
+        .sns
+          Twitter
+        .sns
+          Github

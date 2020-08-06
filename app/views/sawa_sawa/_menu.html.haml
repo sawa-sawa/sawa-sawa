@@ -1,0 +1,34 @@
+.container
+  .header
+    %h1 Main menu
+  %ul.accordion.ResponsiveMenu
+    %li.tab
+      .content.News#news
+        -# = link_to "#",class: "link" do
+        .Msg
+          %h1 News
+          %p 新着情報
+    %li.tab
+      .content.Profile#myprof
+        -# = link_to "#",class: "link" do
+        .Msg
+          %h1 My profile
+          %p sawa-sawaについて自己紹介
+    %li.tab
+      .content.Portfolio#myport
+        -# = link_to "#",class: "link" do
+        .Msg
+          %h1 Portfolio
+          %p 作成したアプリの紹介
+    %li.tab
+      .content.Blog#myblog
+        -# = link_to "#",class: "link" do
+        .Msg  
+          %h1 Blog
+          %p 日々の呟き
+    %li.tab
+      .content.Contact#contact
+        -# = link_to "#",class: "link" do
+        .Msg
+          %h1 Contact
+          %p 連絡先やtwitterなど
