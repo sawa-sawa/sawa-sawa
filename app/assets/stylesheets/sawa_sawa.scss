@@ -34,6 +34,7 @@ html{
       margin-top: 5px;
       .Greet{
         text-align: center;
+        margin: 0 10px;
         span{
           color: #ab0f50;
         }
@@ -84,7 +85,7 @@ html{
           display: flex;
           justify-content: space-between;
           width: 100%;
-          // height: 70%;
+          height: 100px;
           .Photo{
             width: 80px;
             .Me{
